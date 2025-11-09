@@ -37,12 +37,12 @@ services:
     volumes:
       - es-data:/usr/share/elasticsearch/data
     ports:
-      - "9200:9200"
+      - "9290:9200"
 
   redis:
     image: redis
     ports:
-      - "6379:6379"
+      - "6979:6379"
 
   mysql:
     image: mysql:8.0
@@ -51,7 +51,7 @@ services:
       MYSQL_DATABASE: tracardi
       MYSQL_PASSWORD: root
     ports:
-      - "3306:3306"
+      - "3396:3306"
     volumes:
       - mydata:/var/lib/mysql
 
